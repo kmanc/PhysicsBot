@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    android:versionCode="5"
+    android:versionName="1.0"
+    package="com.koins.physicsbot" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/test"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Kinematics">
+        </activity>
+        <activity
+            android:name=".GetKinematicsVariables">
+        </activity>
+        <activity
+            android:name=".KinematicsSolve">
+        </activity>
+        <activity
+            android:name=".Holder">
+        </activity>
+        <activity
+            android:name=".Directions">
+        </activity>
+        <activity
+            android:name=".Electricity">
+        </activity>
+        <activity
+            android:name=".FigureOutElectricityVariable">
+        </activity>
+        <activity
+            android:name=".ElectricitySolve">
+        </activity>
+        <activity
+            android:name=".Magnetism">
+        </activity>
+        <activity
+            android:name=".FigureOutMagnetismVariable">
+        </activity>
+        <activity
+            android:name=".MagnetismSolve">
+        </activity>
+        <activity
+            android:name=".Mechanics">
+        </activity>
+        <activity
+            android:name=".FigureOutMechanicsVariable">
+        </activity>
+        <activity
+            android:name=".MechanicsSolve">
+        </activity>
+    </application>
+
+</manifest>

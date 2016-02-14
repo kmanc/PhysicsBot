@@ -1,0 +1,855 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--Main-->
+
+    <string name="app_name">Physics Bot</string>
+    <string name="welcome">Welcome To Physics Bot</string>
+    <string name="instructions">Select the type of problem you\'re working on</string>
+    <string name="kinlabel">Kinematics</string>
+    <string name="mechlabel">Mechanics</string>
+    <string name="eleclabel">Electricity</string>
+    <string name="maglebel">Magnetism</string>
+    <string name="action_settings">Something goes here</string>
+
+    <!--Control FLow and Misc-->
+
+    <string name="solve">Solve</string>
+    <string name="back">Back</string>
+    <string name="home">Home</string>
+    <string name="solution">Solution</string>
+    <string name="showWork">Show Work</string>
+    <string name="hideWork">Hide Work</string>
+    <string name="exit">Exit</string>
+    <string name="more">Do another problem</string>
+
+    <!--Electricity-->
+
+    <string name="mechanics">Please click on the button that shows the variables you have, and the one you are trying to solve for</string>
+    <string name="forces">Force, mass, acceleration</string>
+    <string name="frictionforce">Force, friction constant, normal force</string>
+    <string name="torque">Torque, distance, force</string>
+    <string name="momentum">Momentum, mass, velocity</string>
+    <string name="impulse">Impulse, force, time</string>
+    <string name="kineticenergy">Kinetic energy, mass, velocity</string>
+    <string name="potentialenergyeq">Potential energy, mass, gravitational acceleration, height</string>
+    <string name="workeq">Work, force, distance</string>
+    <string name="powereq">Power, work, time</string>
+    <string name="powereqtwo">Power, force, velocity</string>
+    <string name="springpotential">Potential energy, spring constant, distance</string>
+    <string name="springperiod">Period, mass, spring constant</string>
+    <string name="pendulumperiod">Period, length, gravitational acceleration</string>
+    <string name="period">Period, frequency</string>
+    <string name="gravityforce">Force, gravitational constant, mass, distance</string>
+    <string name="gravitypotential">Potential energy, gravitational constant, mass, distance</string>
+
+    <!--Kinematics-->
+
+    <string name="kinematics">Please click the button corresponding to the variable you are trying to solve for</string>
+    <string name="missingv">Missing V, Solve For:</string>
+    <string name="missingvo">Missing V₀, Solve For:</string>
+    <string name="missingt">Missing Δt, Solve For</string>
+    <string name="missingx">Missing x₀ and x, Solve For</string>
+    <string name="missinga">Missing a, Solve For</string>
+    <string name="kinematicsinput">Enter the given variables and click solve</string>
+    <string name="electricityinput">Please click on the variable that you are trying to solve for, enter the values of the
+        ones you have, then click solve</string>
+    <string name="velocity">V</string>
+    <string name="initialvelocity">V₀</string>
+    <string name="deltat">Δt</string>
+    <string name="deltax">Δx</string>
+    <string name="position">x</string>
+    <string name="initialposition">x₀</string>
+    <string name="acceleration">a</string>
+    <string name="vmiasolvevo">
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x - x₀ - ½aΔt² = V₀Δt \n\n
+        (x - x₀ - ½aΔt²) / Δt = V₀
+    </string>
+    <string name="vmiasolvet">
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        0 = x₀ - x + VoΔt + ½aΔt² \n\n
+        Use the quadratic equation where \n
+        A = ½a, B = V₀, C = x₀-x \n\n
+        Δt = [V₀ ± sqrt(V₀² - 2a(x₀ - x))] / a
+    </string>
+    <string name="vmiasolvexo">
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x₀ = x - V₀Δt - ½aΔt²
+    </string>
+    <string name="vmiasolvex">
+        x = x₀ + V₀Δt + ½aΔt²
+    </string>
+    <string name="vmiasolvea">
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x - x₀ - V₀Δt = ½aΔt²\n\n
+        2(x - x₀ - V₀Δt) / Δt² = V₀
+    </string>
+    <string name="vomiasolvev">
+        V = V₀ + aΔt \n\n
+        V₀ = V - aΔt \n\n
+        Substitute into \n
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x = x₀ + (V - aΔt)Δt + ½aΔt² \n\n
+        x = x₀ + VΔt - ½aΔt² \n\n
+        x - x₀ + ½aΔt² = VΔt \n\n
+        (x - x₀ + ½aΔt²) / Δt = V
+    </string>
+    <string name="vomiasolvet">
+        V = V₀ + aΔt \n\n
+        V₀ = V - aΔt \n\n
+        Substitute into \n
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x = x₀ + (V - aΔt)Δt + ½aΔt² \n\n
+        x = x₀ + VΔt - ½aΔt² \n\n
+        ½aΔt² - VΔt + x - x₀
+        Use the quadratic equation where \n
+        A = ½a, B = V, C = x - x₀ \n\n
+        Δt = [V ± sqrt(V² - 2a(x - x₀))] / a
+    </string>
+    <string name="vomiasolvexo">
+        V = V₀ + aΔt \n\n
+        V₀ = V - aΔt \n\n
+        Substitute into \n
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x = x₀ + (V - aΔt)Δt + ½aΔt² \n\n
+        x = x₀ + VΔt - ½aΔt² \n\n
+        x₀ = x - VΔt + ½aΔt²
+    </string>
+    <string name="vomiasolvex">
+        V = V₀ + aΔt \n\n
+        V₀ = V - aΔt \n\n
+        Substitute into \n
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x = x₀ + (V - aΔt)Δt + ½aΔt² \n\n
+        x = x₀ + VΔt - ½aΔt²
+    </string>
+    <string name="vomiasolvea">
+        V = V₀ + aΔt \n\n
+        V₀ = V - aΔt \n\n
+        Substitute into \n
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x = x₀ + (V - aΔt)Δt + ½aΔt² \n\n
+        x = x₀ + VΔt - ½aΔt² \n\n
+        x - x₀ - VΔt = ½aΔt² \n\n
+        2(VΔt + x₀ - x) / Δt² = a
+    </string>
+    <string name="tmiasolvev">
+        V² = V₀² + 2a(x - x₀) \n\n
+        V = sqrt(V₀² + 2a(x - x₀))
+    </string>
+    <string name="tmiasolvevo">
+        V² = V₀² + 2a(x - x₀) \n\n
+        V² - 2a(x - x₀) = V₀² \n\n
+        sqrt(V² - 2a(x - x₀)) = V₀
+    </string>
+    <string name="tmiasolvexo">
+        V² = V₀² + 2a(x - x₀) \n\n
+        V² - V₀² = 2a(x - x₀) \n\n
+        (V² - V₀²) / 2a = (x - x₀) \n\n
+        [(V² - V₀²) / 2a] - x = -x₀ \n\n
+        x - [(V² - V₀²) / 2a] = x₀
+    </string>
+    <string name="tmiasolvex">
+        V² = V₀² + 2a(x - x₀) \n\n
+        V² - V₀² = 2a(x - x₀) \n\n
+        (V² - V₀²) / 2a = (x - x₀) \n\n
+        [(V² - V₀²) / 2a] + x₀ = x
+    </string>
+    <string name="tmiasolvea">
+        V² = V₀² + 2a(x - x₀) \n\n
+        V² - V₀² = 2a(x - x₀) \n\n
+        (V² - V₀²) / 2(x - x₀) = a
+    </string>
+    <string name="xmiasolvev">
+        V = V₀ + aΔt
+    </string>
+    <string name="xmiasolvevo">
+        V = V₀ + aΔt \n\n
+        V - aΔt = V₀
+    </string>
+    <string name="xmiasolvet">
+        V = V₀ + aΔt \n\n
+        V - V₀ = aΔt \n\n
+        (V - V₀) / a = Δt
+    </string>
+    <string name="xmiasolvea">
+        V = V₀ + aΔt \n\n
+        V - V₀ = aΔt \n\n
+        (V - V₀) / Δt = a
+    </string>
+    <string name="amiasolvev">
+        V = V₀ + aΔt \n\n
+        V - V₀ = aΔt \n\n
+        (V - V₀) / Δt = a \n\n
+        Substitute into \n
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x = x₀ + V₀Δt + ½(V - V₀)Δt² / Δt \n\n
+        x = x₀ + V₀Δt + ½(V - V₀)Δt \n\n
+        x - x₀ - V₀Δt = ½(V - V₀)Δt \n\n
+        2(x - x₀ - V₀Δt) / Δt = V - V₀ \n\n
+        [2(x - x₀ - V₀Δt) / Δt] + V₀ = V</string>
+    <string name="amiasolvevo">
+        V = V₀ + aΔt \n\n
+        V - V₀ = aΔt \n\n
+        (V - V₀) / Δt = a \n\n
+        Substitute into \n
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x = x₀ + V₀Δt + ½(V - V₀)Δt² / Δt \n\n
+        x = x₀ + V₀Δt + ½(V - V₀)Δt \n\n
+        x - x₀ - V₀Δt = ½(V - V₀)Δt \n\n
+        2(x - x₀ - V₀Δt) / Δt = V - V₀ \n\n
+        [2(x - x₀ - V₀Δt) / Δt] - V = - V₀ \n\n
+        V - [2(x - x₀ - V₀Δt) / Δt] = V₀
+    </string>
+    <string name="amiasolvexo">
+        V = V₀ + aΔt \n\n
+        V - V₀ = aΔt \n\n
+        (V - V₀) / Δt = a \n\n
+        Substitute into \n
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x = x₀ + V₀Δt + ½(V - V₀)Δt² / Δt \n\n
+        x = x₀ + V₀Δt + ½(V - V₀)Δt \n\n
+        x - V₀Δt - ½(V - V₀)Δt = x₀
+    </string>
+    <string name="amiasolvex">
+        V = V₀ + aΔt \n\n
+        V - V₀ = aΔt \n\n
+        (V - V₀) / Δt = a \n\n
+        Substitute into \n
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x = x₀ + V₀Δt + ½(V - V₀)Δt² / Δt \n\n
+        x = x₀ + V₀Δt + ½(V - V₀)Δt
+    </string>
+    <string name="amiasolvet">
+        V = V₀ + aΔt \n\n
+        V - V₀ = aΔt \n\n
+        (V - V₀) / Δt = a \n\n
+        Substitute into \n
+        x = x₀ + V₀Δt + ½aΔt² \n\n
+        x = x₀ + V₀Δt + ½(V - V₀)Δt² / Δt \n\n
+        x = x₀ + V₀Δt + ½(V - V₀)Δt \n\n
+        x - x₀ = V₀Δt + ½(V - V₀)Δt \n\n
+        x - x₀ = (½V + ½V₀)Δt \n\n 2(x - x₀) / (V + V₀) = Δt
+    </string>
+
+    <!--Electricity-->
+
+    <string name="electricity">Please click on the button that shows the variables you have, and the one you are trying to solve for</string>
+    <string name="Σr">Only resistances</string>
+    <string name="Σc">Only capacitances</string>
+    <string name="vir">Voltage, capacitance, current</string>
+    <string name="piv">Power, current, voltage</string>
+    <string name="cqv">Capacitance, charge, voltage</string>
+    <string name="vkqr">Voltage, point charge, distance</string>
+    <string name="iqt">Current, charge, time</string>
+    <string name="fkqr">Force, point charge, distance</string>
+    <string name="efq">Electric field, force, point charge</string>
+    <string name="uqv">Potential energy, point charge, voltage</string>
+    <string name="ukqr">Potential energy, point charge, distance</string>
+    <string name="cϵad">Capacitance, area, distance</string>
+    <string name="rρla">Resistance, resistivity, length, area</string>
+    <string name="ubigqv">Potential energy, charge, voltage</string>
+    <string name="ucv">Potential energy, capcitance, voltage</string>
+    <string name="evd">Electric field, voltage, distance</string>
+    <string name="fixedtitle">"Are they in series (S) or parallel (P)?"</string>
+    <string name="seriesres">
+        R1 + R2 = Rt
+    </string>
+    <string name="parallelres">
+        1 / R1 + 1 / R2 = 1 / Rt \n\n
+        1 / (1 / R1 + 1 / R2) = Rt
+    </string>
+    <string name="parallelcap">
+        1 / C1 + 1 / C2 = 1 / Ct \n\n
+        1 / (1 / C1 + 1 / C2) = Ct
+    </string>
+    <string name="seriescap">
+        C1 + C2 = Ct
+    </string>
+    <string name="vinvir">
+        V = IR
+    </string>
+    <string name="iinvir">
+        V = IR \n\n
+        V / R = I
+    </string>
+    <string name="rinvir">
+        V = IR \n\n
+        V / I = R
+    </string>
+    <string name="pinpiv">
+        P = IV
+    </string>
+    <string name="iinpiv">
+        P = IV \n\n
+        P / V = I
+    </string>
+    <string name="vinpiv">
+        P = IV \n\n
+        P / I = V
+    </string>
+    <string name="cincqv">
+        C = Q / V
+    </string>
+    <string name="qincqv">
+        C = Q / V \n\n
+        CV = Q
+    </string>
+    <string name="vincqv">
+        C = Q / V \n\n
+        Q / C = V
+    </string>
+    <string name="vinvkqr">
+        V = k(q / r)
+    </string>
+    <string name="qinvkqr">
+        V = k(q / r) \n\n
+        V / k = q / r \n\n
+        (Vr) / k = q
+    </string>
+    <string name="rinvkqr">
+        V = k(q / r) \n\n
+        V / (kq) = 1 / r \n\n
+        (kq) / V = r
+    </string>
+    <string name="iiniqt">
+        I = ΔQ / Δt
+    </string>
+    <string name="qiniqt">
+        I = ΔQ / Δt \n\n
+        IΔt = ΔQ
+    </string>
+    <string name="tiniqt">
+        I = ΔQ / Δt \n\n
+        I / ΔQ = 1 / Δt \n\n
+        ΔQ / I = Δt
+    </string>
+    <string name="finfkqr">
+        F = k(q1q2 / r²)
+    </string>
+    <string name="q1infkqr">
+        F = k(q1q2 / r²) \n\n
+        Fr² = kq1q2 \n\n
+        (Fr²) / (kq2) = q1
+    </string>
+    <string name="q2infkqr">
+        F = k(q1q2 / r²) \n\n
+        Fr² = kq1q2 \n\n
+        (Fr²) / (kq1) = q2
+    </string>
+    <string name="rinfkqr">
+        F = k(q1q2 / r²) \n\n
+        F / (kq1q2) = 1 / r² \n\n
+        (kq1q2) / F = r² \n\n
+        sqrt((kq1q2)) / F = r
+    </string>
+    <string name="einefq">
+        E = F / q
+    </string>
+    <string name="finefq">
+        E = F / q \n\n
+        Eq = F
+    </string>
+    <string name="qinefq">
+        E = F / q \n\n
+        E / F = 1 / q \n\n
+        F / E = q
+    </string>
+    <string name="uinuqv">
+        Ue = qV
+    </string>
+    <string name="qinuqv">
+        Ue = qV \n\n
+        Ue / V = q
+    </string>
+    <string name="vinuqv">
+        Ue = qV \n\n
+        Ue / q = V
+    </string>
+    <string name="uinukqr">
+        Ue = k(q1q2 / r)
+    </string>
+    <string name="q1inukqr">
+        Ue = k(q1q2 / r) \n\n
+        Uer = kq1q2 \n\n
+        (Uer) / (kq2) = q1
+    </string>
+    <string name="q2inukqr">
+        Ue = k(q1q2 / r) \n\n
+        Uer = kq1q2 \n\n
+        (Uer) / (kq1) = q2
+    </string>
+    <string name="rinukqr">
+        Ue = k(q1q2 / r) \n\n
+        Ue / (kq1q2) = 1 / r \n\n
+        (kq1q2) / Ue = r
+    </string>
+    <string name="cincϵad">
+        C = (ϵ₀A) / d
+    </string>
+    <string name="aincϵad">
+        C = (ϵ₀A) / d \n\n
+        Cd = (ϵ₀A) \n\n
+        (Cd) / ϵ₀ = A
+    </string>
+    <string name="dincϵad">
+        C = (ϵ₀A) / d \n\n
+        C / (ϵ₀A) = 1 / d \n\n
+        (ϵ₀A) / C = d
+    </string>
+    <string name="rinrρla">
+        R = (ρl) / A
+    </string>
+    <string name="ρinrρla">
+        R = (ρl) / A \n\n
+        RA = ρl \n\n
+        (RA) / l = ρ
+    </string>
+    <string name="linrρla">
+        R = (ρl) / A \n\n
+        RA = ρl \n\n
+        (RA) / ρ = l
+    </string>
+    <string name="ainrρla">
+        R = (ρl) / A \n\n
+        R / (ρl) = 1 / A \n\n
+        (ρl) / R = A
+    </string>
+    <string name="uinubigqv">
+        Uc = (½Q)V
+    </string>
+    <string name="bigqinubigqv">
+        Uc = (½Q)V \n\n
+        Uc / V = (½Q) \n\n
+        Uc / (½V) = Q
+    </string>
+    <string name="vinubigqv">
+        Uc = (½Q)V \n\n
+        Uc / Q = (½V) \n\n
+        Uc / (½Q) = V
+    </string>
+    <string name="uinucv">
+        Uc = (½C)V²
+    </string>
+    <string name="cinucv">
+        Uc = (½C)V² \n\n
+        Uc / V² = (½C) \n\n
+        Uc / (½V²) = C
+    </string>
+    <string name="vinucv">
+        Uc = (½C)V² \n\n
+        Uc / C = (½V²) \n\n
+        Uc / (½Q) = V²
+        sqrt(Uc / (½Q)) = V
+    </string>
+    <string name="einevd">
+        E = - (V / d)
+    </string>
+    <string name="vinevd">
+        E = - (V / d) \n\n
+        -Ed = V
+    </string>
+    <string name="dinevd">
+        E = - (V / d) \n\n
+        -E / V = 1 / d \n\n
+        -V / E = d
+    </string>
+
+    <!--Magnetism-->
+
+    <string name="magnetisminput">Please click on the variable that you are trying to solve for, enter the values of the
+        ones you have, then click solve</string>
+    <string name="magnetism">Please click on the button that shows the variables you have, and the one you are trying to solve for</string>
+    <string name="fqvb">Force, point charge, velocity, magnetic field</string>
+    <string name="fbil">Force, magnetic field, current, length</string>
+    <string name="bir">Magnetic field, current, distance</string>
+    <string name="oba">Magnetic flux, magnetic field, area</string>
+    <string name="eot">Emf, magnetic flux, time</string>
+    <string name="eblv">Emf, magnetic field, length, velocity</string>
+
+    <string name="finfqvb">
+        F = qvBsin(θ)
+    </string>
+    <string name="qinfqvb">
+        F = qvBsin(θ) \n\n
+        F / (vBsin(θ)) = q
+    </string>
+    <string name="vinfqvb">
+        F = qvBsin(θ) \n\n
+        F / (qBsin(θ)) = v
+    </string>
+    <string name="binfqvb">
+        F = qvBsin(θ) \n\n
+        F / (qvsin(θ)) = B
+    </string>
+    <string name="thetainfqvb">
+        F = qvBsin(θ) \n\n
+        F / (qvB) = sin(θ) \n\n
+        arcsin(F / (qvB)) = θ
+    </string>
+    <string name="finfbil">
+        F = BIlsin(θ)
+    </string>
+    <string name="binfbil">
+        F = BIlsin(θ) \n\n
+        F / (Ilsin(θ)) = B
+    </string>
+    <string name="iinfbil">
+        F = BIlsin(θ) \n\n
+        F / (Blsin(θ)) = I
+    </string>
+    <string name="linfbil">
+        F = BIlsin(θ) \n\n
+        F / (BIsin(θ)) = l
+    </string>
+    <string name="thetainfbil">
+        F = BIlsin(θ) \n\n
+        F / (BIl) = sin(θ) \n\n
+        arcsin(F / (BIl)) = θ
+    </string>
+    <string name="binbir">
+        B = (µ / (2π))(I / r) \n\n
+    </string>
+    <string name="iinbir">
+        B = (µ / (2π))(I / r) \n\n
+        B((2π) / µ) = (I / r) \n\n
+        Br((2π) / µ) = I
+    </string>
+    <string name="rinbir">
+        B = (µ / (2π))(I / r) \n\n
+        B((2π) / µ) = (I / r) \n\n
+        (B / I)((2π) / µ) = 1 / r \n\n
+        (I / B)(µ / (2π)) = r
+    </string>
+    <string name="oinoba">
+        ϕ = BAcos(θ)
+    </string>
+    <string name="binoba">
+        ϕ = BAcos(θ) \n\n
+        ϕ / (Acos(θ)) = B
+    </string>
+    <string name="ainoba">
+        ϕ = BAcos(θ) \n\n
+        ϕ / (Bcos(θ)) = A
+    </string>
+    <string name="thetainoba">
+        ϕ = BAcos(θ) \n\n
+        ϕ / (BA) = cos(θ) \n\n
+        arccos(ϕ / (BA)) = θ
+    </string>
+    <string name="eineot">
+        ϵ = Δϕ / Δt
+    </string>
+    <string name="oineot">
+        ϵ = Δϕ / Δt \n\n
+        ϵΔt = Δϕ
+    </string>
+    <string name="tineot">
+        ϵ = Δϕ / Δt \n\n
+        ϵ / Δϕ = 1 / Δt \n\n
+        Δϕ / ϵ = Δt
+    </string>
+    <string name="eineblv">
+        ϵ = Blv
+    </string>
+    <string name="bineblv">
+        ϵ = Blv \n\n
+        ϵ / (lv) = B
+    </string>
+    <string name="lineblv">
+        ϵ = Blv \n\n
+        ϵ / (Bv) = l
+    </string>
+    <string name="vineblv">
+        ϵ = Blv \n\n
+        ϵ / (Bl) = v
+    </string>
+
+    <!--Units-->
+
+    <string name="meterspersecond">m / s</string>
+    <string name="meterspersecondsquared">m / s²</string>
+    <string name="seconds">s</string>
+    <string name="meters">m</string>
+    <string name="resistance">R</string>
+    <string name="capacitance">C</string>
+    <string name="current">I</string>
+    <string name="voltage">V</string>
+    <string name="charge">Q</string>
+    <string name="work">W</string>
+    <string name="deltaphi">Δϕ</string>
+    <string name="deltar">Δr</string>
+    <string name="deltacharge">ΔQ</string>
+    <string name="power">P</string>
+    <string name="force">F</string>
+    <string name="pointcharge">q</string>
+    <string name="pointchargeone">q1</string>
+    <string name="pointchargetwo">q2</string>
+    <string name="distance">d</string>
+    <string name="electricfield">E</string>
+    <string name="potentialenergy">U</string>
+    <string name="area">A</string>
+    <string name="resistivity">ρ</string>
+    <string name="epsilon">ϵ</string>
+    <string name="lowerk">k</string>
+    <string name="lowerr">r</string>
+    <string name="lowerl">l</string>
+    <string name="lowerm">m</string>
+    <string name="lowerg">g</string>
+    <string name="lowerh">h</string>
+    <string name="magneticfield">B</string>
+    <string name="theta">θ</string>
+    <string name="phi">ϕ</string>
+    <string name="mu">μ</string>
+    <string name="tau">τ</string>
+    <string name="bign">N</string>
+    <string name="bigk">K</string>
+    <string name="bigt">T</string>
+    <string name="bigj">J</string>
+    <string name="ts">Ts</string>
+    <string name="tp">Tp</string>
+    <string name="frequency">f</string>
+
+    <string name="finfma">
+        ΣF = ma
+    </string>
+    <string name="minfma">
+        ΣF = ma \n\n
+        ΣF / a = m
+    </string>
+    <string name="ainfma">
+        ΣF = ma \n\n
+        ΣF / m = a
+    </string>
+    <string name="finfun">
+        F = μN
+    </string>
+    <string name="uinfun">
+        F = μN \n\n
+        F / N = μ
+    </string>
+    <string name="ninfun">
+        F = μN \n\n
+        F / μ = N
+    </string>
+    <string name="tintrf">
+        τ = rFsin(θ)
+    </string>
+    <string name="rintrf">
+        τ = rFsin(θ) \n\n
+        τ / (Fsin(θ)) = r
+    </string>
+    <string name="fintrf">
+        τ = rFsin(θ) \n\n
+        τ / (rsin(θ)) = F
+    </string>
+    <string name="thetaintrf">
+        τ = rFsin(θ) \n\n
+        τ / (rF) = sin(θ) \n\n
+        arcsin(τ / (rF)) = θ
+    </string>
+    <string name="pinpmv">
+        p = mV
+    </string>
+    <string name="minpmv">
+        p = mV \n\n
+        p / V = m
+    </string>
+    <string name="vinpmv">
+        p = mV \n\n
+        p / m = V
+    </string>
+    <string name="jinjft">
+        J = FΔt
+    </string>
+    <string name="finjft">
+        J = FΔt \n\n
+        J / Δt = F
+    </string>
+    <string name="tinjft">
+        J = FΔt \n\n
+        J / F = Δt
+    </string>
+    <string name="kinkmv">
+        K = ½mV²
+    </string>
+    <string name="minkmv">
+        K = ½mV² \n\n
+        (2K) / V² = m
+    </string>
+    <string name="vinkmv">
+        K = ½mV² \n\n
+        (2K) / m = V² \n\n
+        sqrt((2K) / m) = V
+    </string>
+    <string name="uinugmh">
+        U = mgh
+    </string>
+    <string name="minugmh">
+        U = mgh \n\n
+        U / (gh) = m
+    </string>
+    <string name="ginugmh">
+        U = mgh \n\n
+        U / (mh) = g
+    </string>
+    <string name="hinugmh">
+        U = mgh \n\n
+        U / (mg) = h
+    </string>
+    <string name="winwfr">
+        W = FΔrcos(θ)
+    </string>
+    <string name="finwfr">
+        W = FΔrcos(θ) \n\n
+        W / (Δrcos(θ)) = F
+    </string>
+    <string name="rinwfr">
+        W = FΔrcos(θ) \n\n
+        W / (Fcos(θ)) = Δr
+    </string>
+    <string name="thetainwfr">
+        W = FΔrcos(θ) \n\n
+        W / (FΔr) = cos(θ) \n\n
+        arccos(W / (FΔr)) = θ
+    </string>
+    <string name="pinpwt">
+        P = W / Δt
+    </string>
+    <string name="winpwt">
+        P = W / Δt \n\n
+        PΔt = W
+    </string>
+    <string name="tinpwt">
+        P = W / Δt \n\n
+        P / W = 1 / Δt \n\n
+        W / P = Δt
+    </string>
+    <string name="pinpfv">
+        P = FVcos(θ)
+    </string>
+    <string name="finpfv">
+        P = FVcos(θ) \n\n
+        P / (Vcos(θ)) = F
+    </string>
+    <string name="vinpfv">
+        P = FVcos(θ) \n\n
+        P / (Fcos(θ)) = V
+    </string>
+    <string name="thetainpfv">
+        P = FVcos(θ) \n\n
+        P / (FV) = cos(θ) \n\n
+        arccos(P / (FV)) = θ
+    </string>
+    <string name="uinukx">
+        U = ½Kx²
+    </string>
+    <string name="kinukx">
+        U = ½Kx² \n\n
+        (2U) / x² = K
+    </string>
+    <string name="xinukx">
+        U = ½Kx² \n\n
+        (2U) / K = x² \n\n
+        sqrt((2U) / K) = V
+    </string>
+    <string name="tintmk">
+        Ts = 2πsqrt(m / k)
+    </string>
+    <string name="mintmk">
+        Ts = 2πsqrt(m / k) \n\n
+        Ts / (2π) = sqrt(m / k) \n\n
+        (Ts / (2π))² = m / k \n\n
+        k * (Ts / (2π))² = m
+    </string>
+    <string name="kintmk">
+        Ts = 2πsqrt(m / k) \n\n
+        Ts / (2π) = sqrt(m / k) \n\n
+        (Ts / (2π))² = m / k \n\n
+        (Ts / (2π))² / m = 1 / k \n\n
+        m / (Ts / (2π))² = k
+    </string>
+    <string name="tintlg">
+        Tp = 2πsqrt(l / g)
+    </string>
+    <string name="lintlg">
+        Tp = 2πsqrt(l / g) \n\n
+        Tp / (2π) = sqrt(l / g) \n\n
+        (Tp / (2π))² = l / g \n\n
+        g * (Tp / (2π))² = l
+    </string>
+    <string name="gintlg">
+        Tp = 2πsqrt(l / g) \n\n
+        Tp / (2π) = sqrt(l / g) \n\n
+        (Tp / (2π))² = l / g \n\n
+        (Tp / (2π))² / l = 1 / g \n\n
+        l / (Tp / (2π))² = g
+    </string>
+    <string name="tintf">
+        T = 1 / f
+    </string>
+    <string name="fintf">
+        T = 1 / f \n\n
+        1 / T = f
+    </string>
+    <string name="finfgmr">
+        F = (Gm1m2) / r²
+    </string>
+    <string name="moneinfgmr">
+        F = - (Gm1m2) / r² \n\n
+        Fr² = (Gm1m2) \n\n
+        (Fr² / (Gm2))= m1
+    </string>
+    <string name="mtwoinfgmr">
+        F = - (Gm1m2) / r² \n\n
+        Fr² = (Gm1m2) \n\n
+        (Fr² / (Gm1))= m2
+    </string>
+    <string name="rinfgmr">
+        F = - (Gm1m2) / r² \n\n
+        1 / F = r² / (Gm1m2) \n\n
+        (Gm1m2) / F = r² \n\n
+        sqrt((Gm1m2) / F) = r
+    </string>
+    <string name="uinugmr">
+        U = (Gm1m2) / r
+    </string>
+    <string name="moneinugmr">
+        U = (Gm1m2) / r \n\n
+        Ur = (Gm1m2) \n\n
+        (Ur / (Gm2))= m1
+    </string>
+    <string name="mtwoinugmr">
+        U = (Gm1m2) / r \n\n
+        Ur = (Gm1m2) \n\n
+        (Ur / (Gm1))= m2
+    </string>
+    <string name="rinugmr">
+        U = (Gm1m2) / r \n\n
+        1 / U = r / (Gm1m2) \n\n
+        (Gm1m2) / U = r
+    </string>
+
+
+
+    <!--Instructions-->
+
+    <string name="directions">How to Use this App</string>
+    <string name="howto">This app is intended to help you with your Physics homework!  I\'d love to hear your feedback, so if
+        you think there is a feature I should add, if you think the colors suck, or if you have any other suggestion, please let me know
+        via a comment or an email (kmancxc@gmail.com) and I\'ll see what I can do.  I\'m doing my best to update this as much as I can, but
+        please don\'t hate me if it takes a while. \n\n  To use this app, simply navigate through the menus to the type of problem that you
+        are working on, and enter the variables that you are given.  I tried to keep the notation as close to the standard equation sheet as
+        I could, so it should be pretty easy to just plug in.  Then hit solve and your answers should be there!  Keep in mind that in order
+        to get this done quickly, I have not been able to take into account units, so please MAKE SURE YOUR UNITS ARE STANDARD BEFORE
+        ENTERING THEM.  This means meters/second for velocity, meters/second² for acceleration, meters for position, and seconds for
+        time.  I\'d hate to see you get an incorrect answer because the problem gave you velocity in feet/second or something like that.
+        Also notice that when your answer is displayed, you can see the work done to get there by clicking on the button below.  \n\n  Last
+        but not least keep in mind that this is an aid, so although I would recommend using this to check your work, and see where you might
+        be going wrong, make sure you do the work on your own as well.  Unfortunately I can\'t take responsibility for any incorrect answers
+        derived from this app, nor can I promise that everything will always be 100% accurate (we all make mistakes).  Also, make sure your
+        teacher or professor is ok with you using this app.  Some might consider it cheating, and if that is the case, I would again suggest
+        that you only use this app to check your work.  That said, this app is intended to make your life easier, so enjoy! </string>
+
+</resources>

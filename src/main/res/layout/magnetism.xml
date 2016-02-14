@@ -1,0 +1,116 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#303030"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:id="@+id/relativelayout">
+
+        <TextView
+            android:text="@string/magnetism"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:id="@+id/title"
+            android:layout_height="75dp"/>
+
+        <Button
+            android:id="@+id/fieldforceone"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/fqvb"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/fieldforcetwo"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/fbil"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/fieldforceone"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/magneticfield"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/bir"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/fieldforcetwo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/flux"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/oba"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/magneticfield"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/emfaverage"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/eot"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/flux"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/emf"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/eblv"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/emfaverage"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:background="@drawable/buttonshapeandcolor"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/emf"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,359 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#303030"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:id="@+id/relativelayout">
+
+        <View
+            android:id="@+id/anchor"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_centerInParent="true" />
+
+        <TextView
+            android:text="@string/kinematics"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:id="@+id/title"
+            android:layout_height="75dp"/>
+
+        <TextView
+            android:text="@string/missingv"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/title"
+            android:id="@+id/missingvlabel"
+            android:layout_height="75dp"/>
+
+        <TextView
+            android:text="@string/missingvo"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/vmiasolvevo"
+            android:id="@+id/missingvolabel"
+            android:layout_height="75dp"/>
+
+        <TextView
+            android:text="@string/missingt"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/vomiasolvev"
+            android:id="@+id/missingtlabel"
+            android:layout_height="75dp"/>
+
+        <TextView
+            android:text="@string/missingx"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/tmiasolvev"
+            android:id="@+id/missingxlabel"
+            android:layout_height="75dp"/>
+
+        <TextView
+            android:text="@string/missinga"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_below="@+id/xmiasolvev"
+            android:id="@+id/missingalabel"
+            android:layout_height="75dp"/>
+
+        <Button
+            android:id="@+id/vmiasolvevo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/initialvelocity"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_below="@+id/missingvlabel"
+            android:layout_toLeftOf="@+id/vmiasolvet"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/vmiasolvet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/deltat"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/vmiasolvevo"
+            android:layout_toLeftOf="@+id/vmiasolvexo"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/vmiasolvexo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/initialposition"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/vmiasolvevo"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:id="@+id/vmiasolvex"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/position"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/vmiasolvevo"
+            android:layout_toRightOf="@+id/vmiasolvexo"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/vmiasolvea"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/acceleration"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/vmiasolvevo"
+            android:layout_toRightOf="@+id/vmiasolvex"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:id="@+id/vomiasolvev"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/velocity"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_below="@+id/missingvolabel"
+            android:layout_toLeftOf="@+id/vmiasolvet"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/vomiasolvet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/deltat"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/vomiasolvea"
+            android:layout_toLeftOf="@+id/vmiasolvexo"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/vomiasolvexo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/initialposition"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/vomiasolvev"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/vomiasolvex"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/position"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/vomiasolvea"
+            android:layout_toRightOf="@+id/vomiasolvexo"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/vomiasolvea"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/acceleration"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/vomiasolvev"
+            android:layout_toRightOf="@+id/vomiasolvex"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:id="@+id/tmiasolvev"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/velocity"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_below="@+id/missingtlabel"
+            android:layout_toLeftOf="@+id/vmiasolvet"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/tmiasolvevo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/initialvelocity"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/tmiasolvev"
+            android:layout_toLeftOf="@+id/vmiasolvexo"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/tmiasolvexo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/initialposition"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/tmiasolvevo"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/tmiasolvex"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/position"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/tmiasolvev"
+            android:layout_toRightOf="@+id/tmiasolvexo"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/tmiasolvea"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/acceleration"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/tmiasolvev"
+            android:layout_toRightOf="@+id/tmiasolvex"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:id="@+id/xmiasolvev"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/velocity"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_below="@+id/missingxlabel"
+            android:layout_toLeftOf="@+id/xmiasolvevo"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/xmiasolvevo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/initialvelocity"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/xmiasolvev"
+            android:layout_toLeftOf="@+id/anchor"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/xmiasolvet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/deltat"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/xmiasolvev"
+            android:layout_toRightOf="@+id/anchor"
+            android:layout_marginLeft="10dp"/>
+
+        <Button
+            android:id="@+id/xmiasolvea"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/acceleration"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/xmiasolvev"
+            android:layout_toRightOf="@+id/xmiasolvet"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:id="@+id/amiasolvev"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/velocity"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_below="@+id/missingalabel"
+            android:layout_toLeftOf="@+id/amiasolvevo"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/amiasolvevo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/initialvelocity"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/amiasolvev"
+            android:layout_toLeftOf="@+id/amiasolvet"
+            android:layout_marginRight="20dp"/>
+
+        <Button
+            android:id="@+id/amiasolvet"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/deltat"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/amiasolvev"
+            android:layout_centerHorizontal="true"/>
+
+        <Button
+            android:id="@+id/amiasolvexo"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/initialposition"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/amiasolvev"
+            android:layout_toRightOf="@+id/amiasolvet"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/amiasolvex"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:text="@string/position"
+            android:textAllCaps="false"
+            android:background="@drawable/circlebutton"
+            android:layout_alignTop="@+id/amiasolvev"
+            android:layout_toRightOf="@+id/amiasolvexo"
+            android:layout_marginLeft="20dp" />
+
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:background="@drawable/buttonshapeandcolor"
+            android:layout_below="@+id/amiasolvev"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="40dp" />
+
+    </RelativeLayout>
+</ScrollView>

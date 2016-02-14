@@ -1,0 +1,246 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#303030"
+    android:fillViewport="true">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+        android:id="@+id/relativelayout">
+
+        <TextView
+            android:text="@string/electricity"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:id="@+id/title"
+            android:layout_height="75dp"/>
+
+        <Button
+            android:id="@+id/resistances"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/Σr"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/title"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/capacitances"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/Σc"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/resistances"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/vir"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/vir"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/capacitances"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/piv"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/piv"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/vir"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/cqv"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/cqv"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/piv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/vkqr"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/vkqr"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/cqv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/iqt"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/iqt"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/vkqr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/fkqr"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/fkqr"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/iqt"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/efq"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/efq"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/fkqr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/uqv"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/uqv"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/efq"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/ukqr"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/ukqr"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/uqv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/cϵad"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/cϵad"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/ukqr"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/rρla"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/rρla"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/cϵad"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/ubigqv"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/ubigqv"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/rρla"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/ucv"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/ucv"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/ubigqv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/evd"
+            android:layout_width="wrap_content"
+            android:paddingLeft="10dip"
+            android:paddingRight="10dip"
+            android:layout_height="40dp"
+            android:text="@string/evd"
+            android:background="@drawable/longercirclebutton"
+            android:layout_below="@+id/ucv"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/Home"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/home"
+            android:background="@drawable/buttonshapeandcolor"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/evd"
+            android:layout_marginTop="30dp"/>
+
+    </RelativeLayout>
+</ScrollView>
