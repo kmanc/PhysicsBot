@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        //test
         final Button mechButton = (Button) findViewById(R.id.Mechanics);
         final Button kinButton = (Button) findViewById(R.id.Kinematics);
         final Button elecButton = (Button) findViewById(R.id.Electricity);
